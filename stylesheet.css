@@ -110,14 +110,14 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 260px;
+  height: 260px;
   position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 260px;
+  height: 260px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -139,4 +139,60 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.papertable {
+  table-layout:fixed;
+}
+
+.figure {
+  width: 260px;
+  vertical-align:middle;
+}
+
+.image-container {
+    position: relative;
+    width: 260px;  /* Adjust the size of your images */
+    height: 195px;
+    vertical-align:middle;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity .3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.image2 {
+    opacity: 0; /* Initially hide the second image */
+}
+
+.image-container:hover .image1 {
+    opacity: 0; /* Fade out the first image on hover */
+}
+
+.image-container:hover .image2 {
+    opacity: 1; /* Fade in the second image on hover */
+}
+
+.leftcol {
+  width: 36%;
+  padding: 10px;
+  vertical-align: middle;
+}
+.rightcol {
+  width: 64%;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.table_row {
+  height: 220px;
+  vertical-align: middle;
 }
