@@ -1,0 +1,768 @@
+[
+  {
+    "id": "adads",
+    "title": "Metric Depth Estimation from Arbitrarily Degraded Low-Resolution Depth Prompts",
+    "url": "https://arxiv.org/abs/2602.09510",
+    "authors": [
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "yun-zhu"
+      },
+      {
+        "id": "pan-zhou"
+      },
+      {
+        "id": "na-zhao",
+        "corresponding": true
+      }
+    ],
+    "venue": "NeurIPS",
+    "year": 2026,
+    "images": [
+      {
+        "src": "/images/adads/fig1.png",
+        "alt": "AdaDS — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [
+      {
+        "label": "Github",
+        "url": "https://github.com/w2kun/AdaDS"
+      }
+    ],
+    "bibtex": "/bibtex/adads.bib",
+    "summary": "AdaDS estimates metric depth from arbitrarily degraded low-resolution depth prompts. Guided by prompt uncertainty, it adaptively selects a diffusion timestep and injects learned noise to project the coarse estimate into a high-density region of a pre-trained depth diffusion prior, which then corrects prompt errors for robust zero-shot depth estimation."
+  },
+  {
+    "id": "pgps",
+    "title": "Physics-Guided Posterior Sampling for Diffusion-Based Real-World Dehazing and Image Enhancement",
+    "url": "https://ieeexplore.ieee.org/document/11386961",
+    "authors": [
+      {
+        "id": "junkai-fan"
+      },
+      {
+        "id": "hao-zheng"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "jianjun-qian"
+      },
+      {
+        "id": "heyou-chang",
+        "corresponding": true
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "TCSVT",
+    "year": 2026,
+    "images": [
+      {
+        "src": "/images/pgps/PGPS.png",
+        "alt": "PGPS — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/pgps.bib",
+    "summary": "We propose a physics-guided diffusion model for dehazing that samples RGB and depth via a pre-trained diffusion process. It uses a hybrid degradation atmospheric scattering model to generate high-fidelity results without paired images, employs two-stage sampling with piecewise loss for improved quality and stability, and includes post-processing to remove amplified JPEG artifacts."
+  },
+  {
+    "id": "tpvd_pami",
+    "title": "Tri-Perspective View Decomposition for Geometry Aware Depth Completion and Super-Resolution",
+    "url": "https://ieeexplore.ieee.org/document/11117177",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "guangwei-gao"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "TPAMI",
+    "year": 2025,
+    "images": [
+      {
+        "src": "/images/tpvd/tpvd_pami.png",
+        "alt": "TPVD — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/tpvd_pami.bib",
+    "summary": "We expand its application from depth completion to depth super-resolution, both of which are RGB-D based depth perception tasks. We introduce 3D point clouds to explicitly model 3D geometry through TPV decomposition and GSPT refinement. We develop a large-scale dataset named TOFDSR. It is the second real-world DSR dataset and contains an order of magnitude more data than the first one."
+  },
+  {
+    "id": "lpnet",
+    "title": "Learning Inverse Laplacian Pyramid for Progressive Depth Completion",
+    "url": "https://arxiv.org/abs/2502.07289",
+    "authors": [
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "junkai-fan"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "arXiv",
+    "year": 2025,
+    "images": [
+      {
+        "src": "/images/lpnet/fig1.png",
+        "alt": "LP-Net — figure 1"
+      },
+      {
+        "src": "/images/lpnet/fig2.png",
+        "alt": "LP-Net — figure 2"
+      }
+    ],
+    "imageLayout": "swap",
+    "links": [],
+    "bibtex": "/bibtex/lpnet.bib",
+    "summary": "LP-Net introduces an innovative depth completion approach based on Laplacian Pyramid decomposition. It begins by establishing a global context of the scene structure, then progressively refines local details through a novel selective filtering mechanism at each scale. LP-Net achieves SOTA performance while maintains high computational efficiency. When this work was completed, it ranked 1st at KITTI online leaderboard among peer-reviewed methods."
+  },
+  {
+    "id": "signet",
+    "title": "Completion as Enhancement: A Degradation-Aware Selective Image Guided Network for Depth Completion",
+    "url": "https://arxiv.org/pdf/2412.19225",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "zhengxue-wang"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "CVPR",
+    "year": 2025,
+    "images": [
+      {
+        "src": "/images/signet/SigNet.png",
+        "alt": "SigNet — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/signet.bib",
+    "summary": "We propose a novel degradation-aware framework SigNet that transforms depth completion into depth enhancement for the first time. SigNet eliminates the mismatch and ambiguity caused by direct convolution over irregularly sampled sparse data. Meanwhile, it builds a self-supervised degradation bridge between coarse depth and targeted dense depth for effective RGB-D fusion."
+  },
+  {
+    "id": "dcl",
+    "title": "DCL: Depth-Centric Dehazing and Depth-Estimation from Real-World Hazy Driving Video",
+    "url": "https://arxiv.org/pdf/2412.11395",
+    "authors": [
+      {
+        "id": "junkai-fan"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "xiang-chen"
+      },
+      {
+        "id": "shangbin-gao"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "AAAI",
+    "year": 2025,
+    "images": [
+      {
+        "src": "/images/dcl/demo.gif",
+        "alt": "DCL — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [
+      {
+        "label": "Project Page",
+        "url": "https://fanjunkai1.github.io/projectpage/DCL/index.html"
+      },
+      {
+        "label": "Github",
+        "url": "https://github.com/fanjunkai1/DCL"
+      },
+      {
+        "label": "Video",
+        "url": "https://www.youtube.com/watch?v=8FYw-MHksq4"
+      }
+    ],
+    "bibtex": "/bibtex/dcl.bib",
+    "summary": "We propose a novel depth-centric learning framework that combines the atmospheric scattering model(ASM) model with the brightness consistency constraint (BCC) constraint. The core idea is to use a shared depth estimation network for both ASM and BCC."
+  },
+  {
+    "id": "dcdepth",
+    "title": "DCDepth: Progressive Monocular Depth Estimation in Discrete Cosine Domain",
+    "url": "https://arxiv.org/abs/2410.14980",
+    "authors": [
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "junkai-fan"
+      },
+      {
+        "id": "wanlu-zhu"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "NeurIPS",
+    "year": 2024,
+    "images": [
+      {
+        "src": "/images/dcdepth/fig1.png",
+        "alt": "DCDepth — figure 1"
+      },
+      {
+        "src": "/images/dcdepth/framework.jpg",
+        "alt": "DCDepth — figure 2"
+      }
+    ],
+    "imageLayout": "swap",
+    "links": [
+      {
+        "label": "Github",
+        "url": "https://github.com/w2kun/DCDepth"
+      },
+      {
+        "label": "Slides",
+        "url": "https://neurips.cc/media/neurips-2024/Slides/96698.pdf"
+      },
+      {
+        "label": "Poster",
+        "url": "https://neurips.cc/media/PosterPDFs/NeurIPS%202024/96698.png?t=1731992895.0685937"
+      }
+    ],
+    "bibtex": "/bibtex/dcdepth.bib",
+    "summary": "DCDepth redefines monocular depth estimation by moving it into the discrete cosine domain, where it models local correlations within depth patches. By exploiting frequency characteristics, DCDepth progressively estimates depth, starting with low-frequency components and then refining with high-frequency details, facilitating a global-to-local depth estimation approach."
+  },
+  {
+    "id": "dvd",
+    "title": "Driving-Video Dehazing with Non-Aligned Regularization for Safety Assistance",
+    "url": "https://arxiv.org/pdf/2405.09996",
+    "authors": [
+      {
+        "id": "junkai-fan"
+      },
+      {
+        "id": "jiangwei-weng"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "yijun-yang"
+      },
+      {
+        "id": "jianjun-qian"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "CVPR",
+    "year": 2024,
+    "images": [
+      {
+        "src": "/images/dvd/pipeline.png",
+        "alt": "DVD — figure 1"
+      },
+      {
+        "src": "/images/dvd/demo.gif",
+        "alt": "DVD — figure 2"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [
+      {
+        "label": "Project Page",
+        "url": "https://fanjunkai1.github.io/projectpage/DVD/index.html"
+      },
+      {
+        "label": "Github",
+        "url": "https://github.com/fanjunkai1/DVD"
+      },
+      {
+        "label": "Video",
+        "url": "https://youtu.be/BHFVx8yv4SY"
+      }
+    ],
+    "bibtex": "/bibtex/dvd.bib",
+    "summary": "We present an innovative video dehazing framework for real-world driving scenarios, addressing temporal and spatial misalignment challenges with non-aligned hazy/clear video pairs and a reference frame matching module."
+  },
+  {
+    "id": "tpvd",
+    "title": "Tri-Perspective View Decomposition for Geometry-Aware Depth Completion",
+    "url": "https://arxiv.org/pdf/2403.15008.pdf",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "yuankai-lin"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "yupeng-zheng"
+      },
+      {
+        "id": "yufei-wang"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "CVPR",
+    "year": 2024,
+    "images": [
+      {
+        "src": "/images/tpvd/TPVD.jpg",
+        "alt": "TPVD — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/tpvd.bib",
+    "summary": "TPVD decomposes 3D point cloud into three views to capture the fine-grained 3D geometry of scenes. TPV Fusion and GSPN modules are proposed to refine the depth. Furthermore, we build a novel depth completion dataset named TOFDC, acquired by a smartphone equipped with a time-of-flight (TOF) sensor.",
+    "award": "oral"
+  },
+  {
+    "id": "altnerf",
+    "title": "AltNeRF: Learning Robust Neural Radiance Field via Alternating Depth-Pose Optimization",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/28360",
+    "authors": [
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "huang-tian"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "AAAI",
+    "year": 2024,
+    "images": [
+      {
+        "src": "/images/altnerf/figure1.jpg",
+        "alt": "AltNeRF — figure 1"
+      },
+      {
+        "src": "/images/altnerf/cat.gif",
+        "alt": "AltNeRF — figure 2"
+      }
+    ],
+    "imageLayout": "swap",
+    "links": [],
+    "bibtex": "/bibtex/altnerf.bib",
+    "summary": "NeRF optimization frequently encounters local minima due to inaccurate camera poses and absent 3D supervision. AltNeRF employs an alternating optimization approach, starting with coarse depth and pose from a self-supervised estimator, to simultaneously refine camera pose, scene depth, and learn the NeRF representation, thereby substantially lowering the cost of high-quality NeRF creation."
+  },
+  {
+    "id": "dul",
+    "title": "Distortion and Uncertainty Aware Loss for Panoramic Depth Completion",
+    "url": "https://openreview.net/pdf?id=0tLjOxqjLS",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "shuo-chen",
+        "corresponding": true
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang"
+      }
+    ],
+    "venue": "ICML",
+    "year": 2023,
+    "images": [
+      {
+        "src": "/images/dul/DUL.png",
+        "alt": "DUL — figure 1"
+      },
+      {
+        "src": "/images/dul/DUL-vis.jpg",
+        "alt": "DUL — figure 2"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/dul.bib",
+    "summary": "Standard MSE or MAE loss function is commonly used in limited field-of-vision depth completion, treating each pixel equally under a basic assumption that all pixels have same contribution during optimization. However, the assumption is inapplicable to panoramic data due to its latitude-wise distortion and high uncertainty nearby textures and edges. To handle these challenges, this paper proposes the distortion and uncertainty aware loss (DUL) that consists of a distortion-aware loss and an uncertainty-aware loss."
+  },
+  {
+    "id": "desnet",
+    "title": "DesNet: Decomposed Scale-Consistent Network for Unsupervised Depth Completion",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/25415/25187",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "AAAI",
+    "year": 2023,
+    "images": [
+      {
+        "src": "/images/desnet/DesNet-vis.jpg",
+        "alt": "DesNet — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/desnet.bib",
+    "summary": "DesNet first introduces a decomposed scale-consistent learning strategy, which disintegrates the absolute depth into relative depth prediction and global scale estimation, contributing to individual learning benefits. Extensive experiments show the superiority of DesNet on KITTI benchmark, ranking 1st and surpassing the second best more than 12% in RMSE.",
+    "award": "oral"
+  },
+  {
+    "id": "vrf",
+    "title": "Variable Radiance Field for Real-World Category-Specific Reconstruction from Single Image",
+    "url": "https://arxiv.org/abs/2306.05145",
+    "authors": [
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "arXiv",
+    "year": 2023,
+    "images": [
+      {
+        "src": "/images/vrf/free_recon.jpg",
+        "alt": "VRF — figure 1"
+      },
+      {
+        "src": "/images/vrf/framework.jpg",
+        "alt": "VRF — figure 2"
+      }
+    ],
+    "imageLayout": "swap",
+    "links": [],
+    "bibtex": "/bibtex/vrf.bib",
+    "summary": "VRF introduces a novel framework for reconstructing category-specific objects from a single image without requiring known camera intrinsics, while also being robust against occlusions. Leveraging a global representation, coordinate-consistent modeling, contrastive learning-based pretraining, and hyper-network-based rendering, VRF significantly outperforms prior methods in both reconstruction performance and efficiency on real-world datasets."
+  },
+  {
+    "id": "rignet",
+    "title": "RigNet: Repetitive Image Guided Network for Depth Completion",
+    "url": "https://arxiv.org/pdf/2107.13802.pdf",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "ECCV",
+    "year": 2022,
+    "images": [
+      {
+        "src": "/images/rignet/RigNet.jpg",
+        "alt": "RigNet — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/rignet.bib",
+    "summary": "RigNet explores a repetitive design for depth completion to tackle the blurry guidance in image and unclear structure in depth. Extensive experiments show that RigNet achieves superior or competitive results on KITTI benchmark and NYUv2 dataset."
+  },
+  {
+    "id": "m3pt",
+    "title": "Multi-Modal Masked Pre-Training for Monocular Panoramic Depth Completion",
+    "url": "https://arxiv.org/pdf/2203.09855.pdf",
+    "authors": [
+      {
+        "id": "zhiqiang-yan",
+        "equalContribution": true
+      },
+      {
+        "id": "xiang-li",
+        "equalContribution": true
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "ECCV",
+    "year": 2022,
+    "images": [
+      {
+        "src": "/images/m3pt/MMMPT.jpg",
+        "alt": "MMMPT — figure 1"
+      },
+      {
+        "src": "/images/m3pt/MMMPT-vis.jpg",
+        "alt": "MMMPT — figure 2"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/m3pt.bib",
+    "summary": "For the first time, we enable the masked pre-training in a Convolution-based multi-modal task, instead of the Transformer-based single-modal task. What's more, we introduce the panoramic depth completion, a new task that facilitates 3D reconstruction."
+  },
+  {
+    "id": "idsr",
+    "title": "Learning Complementary Correlations for Depth Super-Resolution with Incomplete Data in Real World",
+    "url": "https://drive.google.com/file/d/1qMOQz2sfci_ifRO2aSW5KyyDFKwWvLSW/view",
+    "authors": [
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "guangyu-li",
+        "corresponding": true
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang"
+      }
+    ],
+    "venue": "TNNLS",
+    "year": 2022,
+    "images": [
+      {
+        "src": "/images/idsr/IDSR.jpg",
+        "alt": "IDSR — figure 1"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [],
+    "bibtex": "/bibtex/idsr.bib",
+    "summary": "Motivated by pratical applications, this paper introduces a new task, i.e., incomplete depth super-resolution (IDSR), which recovers dense and high-resolution depth from incomplete and low-resolution one."
+  },
+  {
+    "id": "rnw",
+    "title": "Regularizing Nighttime Weirdness: Efficient Self-supervised Monocular Depth Estimation in the Dark",
+    "url": "https://openaccess.thecvf.com/content/ICCV2021/html/Wang_Regularizing_Nighttime_Weirdness_Efficient_Self-Supervised_Monocular_Depth_Estimation_in_the_ICCV_2021_paper.html",
+    "authors": [
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "zhenyu-zhang"
+      },
+      {
+        "id": "zhiqiang-yan"
+      },
+      {
+        "id": "xiang-li"
+      },
+      {
+        "id": "baobei-xu"
+      },
+      {
+        "id": "jun-li",
+        "corresponding": true
+      },
+      {
+        "id": "jian-yang",
+        "corresponding": true
+      }
+    ],
+    "venue": "ICCV",
+    "year": 2021,
+    "images": [
+      {
+        "src": "/images/rnw/fig1.png",
+        "alt": "RNW — figure 1"
+      },
+      {
+        "src": "/images/rnw/framework.png",
+        "alt": "RNW — figure 2"
+      }
+    ],
+    "imageLayout": "swap",
+    "links": [
+      {
+        "label": "Github",
+        "url": "https://github.com/w2kun/RNW"
+      }
+    ],
+    "bibtex": "/bibtex/rnw.bib",
+    "summary": "RNW first introduces a self-supervised monocular depth estimation framework that directly trained on the real-world nighttime images. It leverages distribution knowledge from unpaired depth maps to prevent incorrect model training, and further improves the prediction accuracy with brightness-consistent image enhancement and statistics-based pixel removel."
+  }
+]

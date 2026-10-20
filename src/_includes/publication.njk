@@ -1,0 +1,24 @@
+<article class="publication{% if not publication.images.length %} publication-text-only{% endif %}" id="{{ publication.id }}">
+  {% if publication.images.length %}
+  <div class="publication-images{% if publication.imageLayout == 'swap' %} image-swap{% endif %}"{% if publication.imageLayout == 'swap' %} tabindex="0" role="group" aria-label="{{ publication.id }} figures; focus to show alternate figure"{% endif %}>
+    {% for image in publication.images %}
+    <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy" decoding="async">
+    {% endfor %}
+  </div>
+  {% endif %}
+  <div>
+    <h4 class="paper-title"><a href="{{ publication.url }}">{{ publication.title }}</a></h4>
+    <p class="authors">
+      {% for entry in publication.authors %}
+        {% set author = authors[entry.id] %}
+        {% if entry.id == site.authorId %}<strong>{{ author.name }}</strong>{% elif author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if entry.equalContribution %}<abbr title="Equal contribution">*</abbr>{% endif %}{% if entry.corresponding %} <abbr title="Corresponding author">✉</abbr>{% endif %}{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </p>
+    <p class="publication-links">
+      <em>{{ publication.venue }}</em>, {{ publication.year }}{% if publication.award %}, <strong class="award">{{ publication.award }}</strong>{% endif %}
+      {% for link in publication.links %} / <a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+      / <a href="/citations/{{ publication.id }}/" target="_blank" rel="noopener">BibTeX<span class="sr-only"> (opens in a new tab)</span></a>
+    </p>
+    <p class="summary">{{ publication.summary }}</p>
+  </div>
+</article>

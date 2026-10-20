@@ -1,0 +1,41 @@
+{
+  "roles": [
+    {
+      "title": "Area Chair",
+      "entries": [
+        { "year": 2026, "venue": "ICME"}
+      ]
+    },
+    {
+      "title": "Guest Editor",
+      "entries": [
+        {
+          "year": 2026,
+          "venue": "Sensors — Special Issue: Sensor Applications in 3D Sensing, Depth Perception and Reconstruction",
+          "sample": false
+        }
+      ]
+    }
+  ],
+  "reviewing": [
+    {
+      "title": "Conferences",
+      "venues": [
+        { "abbreviation": "CVPR", "name": "IEEE Conference on Computer Vision and Pattern Recognition" },
+        { "abbreviation": "ICCV", "name": "IEEE International Conference on Computer Vision" },
+        { "abbreviation": "ECCV", "name": "European Conference on Computer Vision" },
+        { "abbreviation": "NeurIPS", "name": "Conference on Neural Information Processing Systems" },
+        { "abbreviation": "ICLR", "name": "International Conference on Learning Representations" },
+        { "abbreviation": "ICML", "name": "International Conference on Machine Learning" },
+        { "abbreviation": "AAAI", "name": "AAAI Conference on Artificial Intelligence" }
+      ]
+    },
+    {
+      "title": "Journals",
+      "venues": [
+        { "abbreviation": "TIP", "name": "IEEE Transactions on Image Processing" },
+        { "abbreviation": "TCSVT", "name": "IEEE Transactions on Circuits and Systems for Video Technology" }
+      ]
+    }
+  ]
+}

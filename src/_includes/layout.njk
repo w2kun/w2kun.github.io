@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if title %}{{ title }} — {% endif %}{{ site.name }}</title>
+    <meta name="author" content="{{ site.name }}">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="/images/icon/person.png" type="image/png">
+    <link rel="stylesheet" href="/stylesheet.css">
+    {% if site.analyticsId %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.analyticsId }}');
+    </script>
+    {% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main">{{ content | safe }}</main>
+  </body>
+</html>

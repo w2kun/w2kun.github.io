@@ -1,0 +1,14 @@
+---
+layout: layout.njk
+pagination:
+  data: publications
+  size: 1
+  alias: publication
+permalink: "/citations/{{ publication.id }}/index.html"
+eleventyComputed:
+  title: "{{ publication.title }} — BibTeX"
+---
+<p><a href="/#{{ publication.id }}">← Back to publications</a></p>
+<h1 class="citation-title">{{ publication.title }}</h1>
+<p><a href="{{ publication.bibtex }}" download>Download BibTeX</a></p>
+<pre class="citation"><code>{{ publication.bibtex | bibtexText }}</code></pre>

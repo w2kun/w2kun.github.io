@@ -1,0 +1,15 @@
+{
+  "name": "kun-wang-academic-page",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "node -e \"require('node:fs').rmSync('_site', {recursive:true, force:true})\" && eleventy && node scripts/check-site.mjs",
+    "test": "node --test",
+    "check": "npm test && npm run build"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7"
+  }
+}

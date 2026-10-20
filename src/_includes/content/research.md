@@ -1,0 +1,1 @@
+My research interests encompass computer vision and machine learning, with a focus on 3D-related tasks such as depth estimation, depth completion and 3D reconstruction, *etc*. These tasks play a pivotal role in various applications such as 3D scene understanding, AR/VR, robotics and autonomous driving *etc*.

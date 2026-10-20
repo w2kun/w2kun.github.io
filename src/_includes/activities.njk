@@ -1,0 +1,30 @@
+{% for role in activities.roles %}
+  {% if role.entries.length %}
+  <div class="activity-group">
+    <h3>{{ role.title }}</h3>
+    <ul class="activity-list">
+      {% for entry in role.entries | sort(true, false, "year") %}
+      <li class="activity-entry">
+        <span class="activity-year">{{ entry.year }}</span>
+        <span>{{ entry.venue }}{% if entry.sample %} <span class="sample-label">Example only · 示例</span>{% endif %}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+{% endfor %}
+{% if activities.reviewing.length %}
+<div class="activity-group">
+  <h3>Reviewing</h3>
+  <dl class="reviewing-list">
+    {% for group in activities.reviewing %}
+      {% if group.venues.length %}
+      <div>
+        <dt>{{ group.title }}</dt>
+        <dd>{% for venue in group.venues %}<abbr title="{{ venue.name }}">{{ venue.abbreviation }}</abbr>{% if not loop.last %} · {% endif %}{% endfor %}</dd>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </dl>
+</div>
+{% endif %}

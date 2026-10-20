@@ -1,0 +1,44 @@
+---
+layout: layout.njk
+---
+<header class="profile">
+  <div>
+    <h1>{{ site.displayName }}</h1>
+    {% renderFile "src/_includes/content/about.md" %}
+    <nav class="profile-links" aria-label="Contact and profiles">
+      {% for link in site.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %} / {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+  <img class="portrait" src="{{ site.photo }}" alt="{{ site.name }}" width="1216" height="1573">
+</header>
+
+<nav class="section-nav" aria-label="Page sections">
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#activities">Academic Activities</a>
+</nav>
+
+<section aria-labelledby="research">
+  <h2 id="research">Research</h2>
+  {% renderFile "src/_includes/content/research.md" %}
+</section>
+
+<section aria-labelledby="publications">
+  <h2 id="publications">Publications</h2>
+  {% for year, papers in publications | groupby("year") | dictsort | reverse %}
+  <div class="publication-year">
+    <h3 class="year-heading">{{ year }}</h3>
+    {% for publication in papers %}
+      {% include "publication.njk" %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="activities">
+  <span id="service"></span>
+  <h2 id="activities">Academic Activities</h2>
+  {% include "activities.njk" %}
+</section>

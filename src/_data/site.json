@@ -1,0 +1,23 @@
+{
+  "name": "Kun Wang",
+  "displayName": "Kun Wang (王琨)",
+  "authorId": "kun-wang",
+  "url": "https://w2kun.github.io",
+  "description": "Kun Wang — computer vision and machine learning research, with a focus on depth estimation, depth completion and 3D reconstruction.",
+  "photo": "/images/kunwang.jpg",
+  "analyticsId": "G-LZF0KZ4E70",
+  "links": [
+    {
+      "label": "Email",
+      "url": "mailto:kunwang@njust.edu.cn"
+    },
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=ORn7aZcAAAAJ&hl=zh-CN"
+    },
+    {
+      "label": "Github",
+      "url": "https://github.com/w2kun"
+    }
+  ]
+}
