@@ -78,9 +78,9 @@ npm run build   # 构建并检查，输出到 _site/
 
 ## 维护 Academic Activities
 
-`src/_data/activities.json` 中，`roles` 存放 AC、PC 等任职分类，每条记录包含 `year`、`venue` 和 `sample`。同一角色内按年份倒序展示；空的 `entries` 不显示该分类。
+`src/_data/activities.json` 中，`roles` 存放 AC、PC 等任职分类，每条记录包含 `year`、`venue`，以及可选的 `sample`。同一角色内按年份倒序展示；空的 `entries` 不显示该分类。
 
-`sample: true` 会显示 **Example only · 示例** 标签。填写真实任职的会议和年份后，将 `sample` 设为 `false`；不需要的记录直接删除。发布前请替换或删除示例记录。
+`sample` 表示是否为示例记录，省略时按 `false` 处理，不显示示例标签；只有 `sample: true` 会显示 **Example only · 示例** 标签。填写真实任职的会议和年份后，可删除 `sample` 字段或设为 `false`。填写时必须使用 JSON 布尔值，不能使用字符串 `"false"` 或 `"true"`。发布前请替换或删除示例记录。
 
 在 `reviewing` 中增删会议或期刊，使用 `abbreviation` 填写简称、`name` 填写全称。
 

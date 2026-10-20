@@ -3,7 +3,7 @@
     {
       "title": "Area Chair",
       "entries": [
-        { "year": 2026, "venue": "ICME"}
+        { "year": 2026, "venue": "ICME", "sample": false }
       ]
     },
     {

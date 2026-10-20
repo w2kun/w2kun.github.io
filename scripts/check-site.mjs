@@ -15,7 +15,7 @@ for (const role of activities.roles) {
   for (const entry of role.entries) {
     assert(Number.isInteger(entry.year) && entry.year >= 1900 && entry.year <= 2100, "Activity needs a valid year");
     assert(typeof entry.venue === "string" && entry.venue.trim(), "Activity needs a venue");
-    assert(typeof entry.sample === "boolean", "Activity sample must explicitly be true or false");
+    assert(entry.sample === undefined || typeof entry.sample === "boolean", "Activity sample must be true or false when provided");
     assert(decode(homepage).includes(entry.venue), `Missing activity: ${entry.venue}`);
     if (entry.sample) sampleCount++;
   }
