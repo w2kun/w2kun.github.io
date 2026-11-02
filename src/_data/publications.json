@@ -37,6 +37,42 @@
     "summary": "AdaDS estimates metric depth from arbitrarily degraded low-resolution depth prompts. Guided by prompt uncertainty, it adaptively selects a diffusion timestep and injects learned noise to project the coarse estimate into a high-density region of a pre-trained depth diffusion prior, which then corrects prompt errors for robust zero-shot depth estimation."
   },
   {
+    "id": "ccf",
+    "title": "CCF: Complementary Collaborative Fusion for Domain Generalized Multi-Modal 3D Object Detection",
+    "url": "https://arxiv.org/abs/2603.23276",
+    "authors": [
+      {
+        "id": "yuchen-wu"
+      },
+      {
+        "id": "kun-wang"
+      },
+      {
+        "id": "yining-pan"
+      },
+      {
+        "id": "na-zhao",
+        "corresponding": true
+      }
+    ],
+    "venue": "CVPR",
+    "year": 2026,
+    "images": [
+      {
+        "src": "/images/ccf/CCF.png",
+        "alt": "CCF — figure 5"
+      }
+    ],
+    "imageLayout": "stack",
+    "links": [
+      {
+        "label": "Github",
+        "url": "https://github.com/IMPL-Lab/CCF"
+      }
+    ],
+    "bibtex": "/bibtex/ccf.bib",
+    "summary": "CCF addresses modality imbalance in multi-modal 3D object detection through balanced query supervision, LiDAR-guided depth priors, and complementary cross-modal masking. It improves generalization across weather, lighting, and geographic shifts while maintaining source-domain performance."},
+  {
     "id": "pgps",
     "title": "Physics-Guided Posterior Sampling for Diffusion-Based Real-World Dehazing and Image Enhancement",
     "url": "https://ieeexplore.ieee.org/document/11386961",
